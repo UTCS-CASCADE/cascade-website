@@ -5,12 +5,14 @@
     {% if role.key == role-key %}
         <h3 class="pt-3"> {{ role.name }} </h3>
         <div class="role {{ role.key }}">
+            <div class="people-grid">
             {% for item in site.data.people %}
                 {% assign person = item[1] %}
                 {% if person.role == role.key %}
                     {% include person.html person=person image=include.image %}
                 {% endif %}
             {% endfor %}
+            </div>
         </div>
     {% endif %}
 {% endfor %}

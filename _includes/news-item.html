@@ -10,7 +10,9 @@
 {% capture news %}
     <div>
         {% if post.shortnews %}
-            {{ post.content | markdownify | remove: '<p>' | remove: '</p>' }}
+            <div class="shortnews-content">
+                {{ post.content | markdownify | remove: '<p>' | remove: '</p>' }}
+            </div>
         {% else %}
             <h5> <a href="{{ site.base }}{{ post.url }}"> {{ post.title }} </a> </h5>
             {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
@@ -20,9 +22,26 @@
     </div>
 {% endcapture %}
 
+{% case icon %}
+  {% when "paper" %}
+    {% assign icon_markup = "📄" %}
+  {% when "award" %}
+    {% assign icon_markup = "🏆" %}
+  {% when "event" %}
+    {% assign icon_markup = "⭐" %}
+  {% when "pin" %}
+    {% assign icon_markup = "📌" %}
+  {% else %}
+    {% assign icon_markup = "📌" %}
+{% endcase %}
+
+
 {% capture header %}
-<span class="fa fa-fw fa-{{ icon }}"></span>
-<span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+<span class="news-emoji">{{ icon_markup }}</span>
+<span class="date">{{ post.date | date: '%b %Y' }}</span>
+{% if item.title %}
+  <span class="news-title">{{ item.title }}</span>
+{% endif %}
 {% endcapture %}
 
 <li class="{{ class }}">

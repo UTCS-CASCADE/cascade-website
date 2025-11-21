@@ -27,17 +27,20 @@ there by default by Bootstrap columns.
     {% assign name = person.display_name %}
 {% endif %}
 
+<div class="person-item">
 {% if include.image %}
     <div class="person person-with-image row align-items-center">
         <div class="col-auto">
+            <div class="person-item">
             {% include person-image.html person=person %}
+            </div>
         </div>
-        <div class="col pl-0">
+        <!-- <div class="col pl-0">
             <h6 class="person-name"> {{ name }} </h6>
             {% if person.bio %}
                 <div class="bio">{{person.bio}}</div>
             {% endif %}
-        </div>
+        </div> -->
     </div>
 {% else %}
     <div class="person person-without-image">
@@ -47,3 +50,4 @@ there by default by Bootstrap columns.
         {% endif %}
     </div>
 {% endif %}
+</div>

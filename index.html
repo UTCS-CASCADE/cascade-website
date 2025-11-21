@@ -3,46 +3,35 @@ layout: default
 title: Home
 notitle: true
 
-# groups of columns of {roles: list, width: num, image: bool}
-role-tables:
-- - roles: [faculty, postdoc, staff]
-    width: 4
-    image: true
-  - roles: [grad]
-    width: 8
-    image: true
-- - roles: [collab, ugrad, ugrad-alum]
-    width: 5
-    image: false
-  - roles: [alum]
-    width: 7
-    image: false
-
 ---
+<h4 style="text-align: center; font-weight: 700;">
+    The <span style="color: #CB6015">CASCADE Lab</span>
+    develops next-generation architectures and systems that enhance performance, efficiency, and utilization in cloud and datacenter environments.
+</h4>
 
 <div class="jumbotron">
     <p>
-        The <b>Awesome Research Group</b> at <b>Example U</b> does all sorts of
-        research. Here is a place where we tell you exactly what that is!
+        TODO: Description of CASCADE
     </p>
 </div>
 
+<h5>
+    We are looking for highly motivated students to join our lab!<br>
+    Please reach out to <a href="jovan.stojkovic@utexas.edu">jovan.stojkovic@utexas.edu</a> with your CV if you are interested.
+</h5>
+
 <section>
-    <h2>News</h2>
-    <ul class="news list-unstyled">
-        {% for post in site.posts limit: site.front_page_news %}
-            {% include news-item.html item=post %}
-        {% endfor %}
-    </ul>
-    {% assign numposts = site.posts | size %}
-    {% if numposts >= 1 %}
-        <p>
-            <span class="fa fa-fw fa-history"></span>
-            <a href="{{ site.base }}/blog.html">Older posts&hellip;</a>
-        </p>
-    {% endif %}
+    <h2> Recent News </h2>
+    <div class="news-scroll">
+        <ul class="news list-unstyled">
+            {% for post in site.posts %}
+                {% include news-item.html item=post %}
+            {% endfor %}
+        </ul>
+    </div>
 </section>
 
+<!-- 
 <section>
     <h2>Research</h2>
     <div class="card-columns">
@@ -72,4 +61,4 @@ role-tables:
             {% endfor %}
         </section>
     {% endfor %}
-</div>
+</div> -->

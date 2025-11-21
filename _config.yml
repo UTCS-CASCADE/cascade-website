@@ -1,6 +1,5 @@
-name: Awesome Research Group
-url: http://awesome.example.edu
-
+name: CASCADE Group
+url: TODO
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
 # colorize code snippets with the pygments module
@@ -17,14 +16,12 @@ roles:
     name: Staff
   - key: postdoc
     name: Researchers
-  - key: grad
-    name: Graduate Students
+  - key: phd
+    name: PhD Students
+  - key: master
+    name: Masters Students
   - key: ugrad
     name: Undergraduate Students
-  - key: ugrad-alum
-    name: Past Undergraduate Students
-  - key: collab
-    name: Collaborators
   - key: alum
     name: Alumni
 
@@ -44,10 +41,6 @@ navigation:
   - title: Home
     link: /
   - title: People
-    link: /#people
-  - title: Research
-    link: /research.html
+    link: /people.html
   - title: Publications
     link: /publications.html
-  - title: Code
-    link: /code.html

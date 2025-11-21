@@ -3,6 +3,9 @@
 
 $gray: #999;
 $light-gray: #EEE;
+$dark-blue: #063673;
+$less-dark-blue: #073e85;
+$ut-orange: #CB6015;
 
 /* Space out content a bit */
 body {
@@ -62,8 +65,9 @@ a > .fa {
 ul.news {
 
     .date {
-        color: $gray;
+        color: $dark-blue;
         font-weight: bold;
+        font-size: 1.2rem; 
     }
 
     > li {
@@ -116,21 +120,9 @@ section {
 }
 
 .person {
-
-    margin-bottom: 10px;
-
-    .profile {
-        height: 70px;
-        width: 70px;
-    }
-
-    .bio {
-        color: $gray;
-    }
-
-    .person-name {
-        margin: 0;
-    }
+    display: flex;
+    align-items: center;   /* vertically center image + text */
+    gap: 20px;             /* space between image and title */
 }
 
 .person-without-image {
@@ -144,4 +136,66 @@ section {
 svg {
     // make the alignment just like img from bootstrap's reboot.scss
     vertical-align: middle;
+}
+
+.news-scroll {
+    max-height: 400px;   /* adjust to taste */
+    overflow-y: auto;
+    padding-right: 0.5rem; /* avoids scrollbar overlapping text on some browsers */
+}
+
+/* optional: make the list look nice inside the scroll area */
+.news-scroll .news {
+    margin: 0;
+    padding-left: 0;
+}
+
+.news-title {
+    color: $dark-blue;
+    margin-left: 0.5rem;
+    font-size: 1.2rem; 
+    font-weight: 600;
+}
+
+.shortnews-content {
+  color: $less-dark-blue;
+  margin-left: 1.5rem;   /* indent amount; tweak as you like */
+  /* or: padding-left: 1.5rem; */
+}
+
+a {
+  color: $less-dark-blue;   /* pastel darker blue */
+}
+
+/* Default (inactive) nav boxes */
+.nav.nav-pills .nav-link {
+    background-color: #f3cb9b;  /* light blue box */
+    color: $ut-orange;             /* dark blue text */
+    border-radius: 999px;       /* pill shape, keep or tweak */
+    margin-left: 0.25rem;       /* a bit of spacing between boxes */
+    font-weight: 500;
+}
+
+/* Active page box */
+.nav.nav-pills .nav-link.active {
+    background-color: $ut-orange;  /* darker blue when active */
+    color: #ffffff;             /* white text */
+}
+
+/* 3-column grid of people */
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* exactly 3 columns */
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+/* Each person card */
+.person-item {
+    text-align: center; /* image + name centered within its cell if you later add names */
+}
+
+.person-title {
+    font-size: 1.3rem;     /* make the text larger */
+    font-weight: 520;      /* a bit bolder */
 }

@@ -13,24 +13,30 @@ text-decoration hack is for Safari. We don't SVGs to be underlined.
 
 {% if person.image %}
     {% capture image %}
+    <div class="person">
         <img class="rounded-circle profile"
-             alt="{{ person.display_name }}"
-             title="{{ person.display_name }}"
-             src="{{ site.base }}{{ person.image }}" />
+             src="{{ site.base }}{{ person.image }}" 
+             style="width: 160px; height: 160px;"
+        />
+
+        <span class="person-title">
+            {{ person.display_name }}
+        </span>
+    </div>
     {% endcapture %}
 {% else %}
     {% capture image %}
+    <div class="person">
         <svg class="profile noprofile"
-             alt="{{ person.display_name }}"
-             viewBox="0 0 100 100">
-            <title>{{ person.display_name }}</title>
-            <circle r="50" cx="50" cy="50" />
-            <text x="50" y="50"
-                  font-size="70"
-                  text-anchor="middle" dominant-baseline="central" >
-                {{ person.display_name | slice: 0 }}
+             style="width: 160px; height: 160px;">
+            <circle r="80" cx="80" cy="80" />
             </text>
         </svg>
+
+        <span class="person-title">
+            {{ person.display_name }}
+        </span>
+    </div>
     {% endcapture %}
 {% endif %}
 
