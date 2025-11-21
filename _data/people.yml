@@ -5,7 +5,7 @@ jovan:
     image: ../img/people/jovan-profile.png
 
 josh:
-    display_name: "Joshua Kim"
+    display_name: "Joshua Kim <br><small><small>(co-advised by Chris Rossbach)</small></small>"
     role: phd
     webpage: https://joshk411.github.io/
     image: ../img/people/josh-profile.png
@@ -17,7 +17,7 @@ alan:
     image: ../img/people/alan-profile.png
 
 petar:
-    display_name: "Petar Acimovic <br>(visiting from Univ. of Cincinnati)"
+    display_name: "Petar Acimovic <br><small><small>(visiting from Univ. of Cincinnati)</small></small>"
     role: ugrad
     webpage: https://www.linkedin.com/in/petar-acimovic/
     image: 
