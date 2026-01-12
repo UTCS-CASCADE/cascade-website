@@ -1,0 +1,190 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+}
+
+.header {
+  border-bottom: 1px solid #EEE;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer {
+  /* padding-top: 19px; */
+  color: #999;
+  border-top: 1px solid #EEE;
+  text-align: center;
+  font-size: 0.8em;
+}
+.footer a:link, .footer a:visited {
+  color: #999;
+}
+
+.fa {
+  color: #999;
+}
+
+a > .fa {
+  display: inline;
+}
+
+/* /\* Customize container *\/ */
+/* @media (min-width: 768px) { */
+/*     .container { */
+/*         max-width: 730px; */
+/*     } */
+/* } */
+/* Jumbotron */
+.jumbotron {
+  text-align: justify;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  font-size: 110%;
+}
+
+/* Group logo */
+#logo {
+  width: 154px;
+  height: 35px;
+  margin: 2px 0 8px 0;
+}
+
+/* Front page news. */
+ul.news .date {
+  color: #063673;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+ul.news > li {
+  margin-top: 1em;
+}
+
+@media (min-width: 576px) {
+  .project-people {
+    column-count: 2;
+  }
+  .card-columns {
+    column-count: 2;
+  }
+}
+@media (min-width: 768px) {
+  .role.grad {
+    column-count: 2;
+  }
+  .project-people {
+    column-count: 3;
+  }
+  .card-columns {
+    column-count: 3;
+  }
+}
+.title img {
+  max-width: 50%;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+.profile {
+  object-fit: cover;
+}
+
+.noprofile circle {
+  fill: #EEE;
+}
+.noprofile text {
+  font-weight: 700;
+  fill: white;
+}
+
+.card .profile {
+  height: 40px;
+  width: 40px;
+  margin: 3px;
+}
+.card .card-footer {
+  padding: 0.5em;
+}
+
+.person {
+  display: flex;
+  align-items: center; /* vertically center image + text */
+  gap: 20px; /* space between image and title */
+}
+
+.person-without-image {
+  margin: 0;
+}
+.person-without-image .bio {
+  margin-left: 1em;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+.news-scroll {
+  max-height: 400px; /* adjust to taste */
+  overflow-y: auto;
+  padding-right: 0.5rem; /* avoids scrollbar overlapping text on some browsers */
+}
+
+/* optional: make the list look nice inside the scroll area */
+.news-scroll .news {
+  margin: 0;
+  padding-left: 0;
+}
+
+.news-title {
+  color: #063673;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.shortnews-content {
+  color: #073e85;
+  margin-left: 1.5rem; /* indent amount; tweak as you like */
+  /* or: padding-left: 1.5rem; */
+}
+
+a {
+  color: #073e85; /* pastel darker blue */
+}
+
+/* Default (inactive) nav boxes */
+.nav.nav-pills .nav-link {
+  background-color: #f3cb9b; /* light blue box */
+  color: #CB6015; /* dark blue text */
+  border-radius: 999px; /* pill shape, keep or tweak */
+  margin-left: 0.25rem; /* a bit of spacing between boxes */
+  font-weight: 500;
+}
+
+/* Active page box */
+.nav.nav-pills .nav-link.active {
+  background-color: #CB6015; /* darker blue when active */
+  color: #ffffff; /* white text */
+}
+
+/* 3-column grid of people */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* exactly 3 columns */
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+/* Each person card */
+.person-item {
+  text-align: center; /* image + name centered within its cell if you later add names */
+}
+
+.person-title {
+  font-size: 1.3rem; /* make the text larger */
+  font-weight: 520; /* a bit bolder */
+}
+
+/*# sourceMappingURL=group.css.map */
