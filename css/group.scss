@@ -222,54 +222,39 @@ a {
 // }
 
 
-/* 3-column grid of people (desktop default) */
+/* Desktop default */
 .people-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: 4rem;
     row-gap: 2rem;
-    justify-items: start; /* left align desktop */
+    justify-items: start;
 }
 
-/* Desktop card size stays fixed */
 .person-item {
-    width: 20em;      /* keep your original desktop size */
+    width: 20em;      /* desktop fixed card width */
     height: 15.5em;
     text-align: center;
 }
 
-.person-title {
-    font-size: 1.3rem;     /* make the text larger */
-    font-weight: 500;      /* a bit bolder */
-}
-
-/* Tablet: 2 columns, allow shrinking instead of overflow */
-@media (max-width: 992px) {
-    .people-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        column-gap: 2rem;
-    }
-    .person-item {
-        width: 100%;
-        max-width: 20em;  /* don’t exceed desktop size */
-        height: auto;     /* avoids overlap if text wraps */
-    }
-}
-
-/* Mobile: 1 column + centered cards */
+/* Mobile: guaranteed single column, centered, no horizontal overlap */
 @media (max-width: 576px) {
     .people-grid {
-        grid-template-columns: 1fr;
-        justify-items: center; /* center cards only on mobile */
-        column-gap: 0;
+        grid-template-columns: 1fr !important;
+        column-gap: 0 !important;
+        justify-items: center;
     }
+
     .person-item {
-        width: 100%;
-        max-width: 20em;
-        height: auto;
+        width: min(20em, 100%) !important; /* cannot exceed viewport/track */
+        max-width: 100%;
     }
 }
 
+.person-title {
+    font-size: 1.3rem;     /* make the text larger */
+    font-weight: 520;      /* a bit bolder */
+}
 
 
 .inline-line {
