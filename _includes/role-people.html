@@ -3,7 +3,7 @@
 
 {% for role in site.roles %}
     {% if role.key == role-key %}
-        <h3 class="pt-3"> {{ role.name }} </h3>
+        <h3 class="pt-3 section-header" style="margin-left: 15px;"> {{ role.name }} </h3>
         <div class="role {{ role.key }}">
             <div class="people-grid">
             {% for item in site.data.people %}
