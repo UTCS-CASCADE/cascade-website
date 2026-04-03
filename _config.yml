@@ -1,5 +1,5 @@
 name: UTCS CASCADE | Computer Architecture and Systems for Cloud and Datacenter Evolution Group at UT Austin
-url: TODO
+url: cascade.cs.utexas.edu
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
 # colorize code snippets with the pygments module
@@ -41,6 +41,8 @@ navigation:
   - title: Home
     link: /
   - title: People
-    link: /people.html
+    link: /people
   - title: Publications
-    link: /publications.html
+    link: /publications
+  - title: SKYLINE ISCA'26 Workshop
+    link: /isca26-workshop
