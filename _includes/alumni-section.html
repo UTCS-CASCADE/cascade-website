@@ -1,0 +1,41 @@
+<section class="people row justify-content-between alumni-section">
+    <div class="col-md-12 px-0">
+        <h3 class="pt-3 section-header" style="margin-left: 15px;"> Alumni </h3>
+
+        {% assign alumni_levels = "phd,master,ugrad" | split: "," %}
+        {% for level in alumni_levels %}
+            {% case level %}
+                {% when "phd" %}
+                    {% assign level_name = "PhD" %}
+                {% when "master" %}
+                    {% assign level_name = "Masters" %}
+                {% when "ugrad" %}
+                    {% assign level_name = "Undergraduate" %}
+            {% endcase %}
+
+            <h4 class="pt-3 alumni-subheader" style="margin-left: 15px;"> {{ level_name }} </h4>
+            <div class="alumni-list">
+                {% for item in site.data.people %}
+                    {% assign person = item[1] %}
+                    {% if person.role == "alum" and person.alum_level == level %}
+                        {% assign clean_name = person.display_name | strip_html %}
+                        {% if person.webpage %}
+                            {% capture name %}
+                                <a href="{{ person.webpage | escape }}"> {{ clean_name }} </a>
+                            {% endcapture %}
+                        {% else %}
+                            {% assign name = clean_name %}
+                        {% endif %}
+
+                        <div class="alumni-row">
+                            {{ name }}
+                            {% if person.next %}
+                                <span class="alumni-next"> → {{ person.next }} </span>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</section>

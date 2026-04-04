@@ -9,15 +9,19 @@ josh:
     role: phd
     webpage: https://joshk411.github.io/
     image: ../img/people/josh-profile.png
+    bio: "<b>Start</b>: Fall 2025 <br> Undergraduate from CMU <br> <b>Research Interest</b>:<br> Heterogeneous Architectures for Datacenters"
 
 alan:
     display_name: "Alan Andrade"
     role: phd
     webpage: https://alan-s-andrade.github.io/
     image: ../img/people/alan-profile.png
+    bio: "<b>Start</b>: Fall 2025 <br> Masters from UIUC <br> <b>Research Interest</b>:<br> Cloud Benchmarks and Memory Systems"
 
 petar:
     display_name: "Petar Acimovic <br><small><small>(visiting from Univ. of Cincinnati)</small></small>"
-    role: ugrad
+    role: alum
+    alum_level: ugrad
     webpage: https://www.linkedin.com/in/petar-acimovic/
     image: ../img/people/petar-profile.png
+    next: "PhD at Georgia Institute of Technology"

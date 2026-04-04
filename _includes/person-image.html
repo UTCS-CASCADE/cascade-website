@@ -13,29 +13,39 @@ text-decoration hack is for Safari. We don't SVGs to be underlined.
 
 {% if person.image %}
     {% capture image %}
-    <div class="person">
-        <img class="rounded-circle profile"
-             src="{{ site.base }}{{ person.image }}" 
-             style="width: 160px; height: 160px;"
-        />
-        
-        <span class="person-title">
-            {{ person.display_name }}
-        </span>
+    <div class="person-card">
+        <div class="person">
+            <img class="rounded-circle profile"
+                 src="{{ site.base }}{{ person.image }}" 
+                 style="width: 160px; height: 160px;"
+            />
+            
+            <span class="person-title">
+                {{ person.display_name }}
+            </span>
+        </div>
+        {% if person.role == "phd" and person.bio %}
+            <span class="person-hover">{{ person.bio }}</span>
+        {% endif %}
     </div>
     {% endcapture %}
 {% else %}
     {% capture image %}
-    <div class="person">
-        <svg class="profile noprofile"
-             style="width: 160px; height: 160px;">
-            <circle r="80" cx="80" cy="80" />
-            </text>
-        </svg>
+    <div class="person-card">
+        <div class="person">
+            <svg class="profile noprofile"
+                 style="width: 160px; height: 160px;">
+                <circle r="80" cx="80" cy="80" />
+                </text>
+            </svg>
 
-        <span class="person-title">
-            {{ person.display_name }}
-        </span>
+            <span class="person-title">
+                {{ person.display_name }}
+            </span>
+        </div>
+        {% if person.role == "phd" and person.bio %}
+            <span class="person-hover">{{ person.bio }}</span>
+        {% endif %}
     </div>
     {% endcapture %}
 {% endif %}

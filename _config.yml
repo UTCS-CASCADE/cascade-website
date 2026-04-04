@@ -44,5 +44,7 @@ navigation:
     link: /people.html
   - title: Publications
     link: /publications.html
+  - title: Teaching
+    link: /teaching.html
   - title: SKYLINE ISCA'26 Workshop
     link: /isca26-workshop.html

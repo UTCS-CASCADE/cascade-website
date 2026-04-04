@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UTCS CASCADE | Computer Architecture and Systems for Cloud and Datacenter Evolution Group at UT Austin</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/group.css">
+        <link rel="icon" href="/ut-logo-cropped.png">
+    </head>
+    <body>
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="header d-flex
+                        flex-column
+                        flex-md-row
+                        justify-content-md-between
+                        align-items-md-center">
+                <a href="/" class="">
+                    <img src="/img/cascade-logo-2.png" style="max-width: 500px; width: 100%; height: auto;" id="logo">
+                    <!-- srcset="/img/cascade-logo-1.png 2x" -->
+                </a>
+                <ul class="nav nav-pills justify-content-end header-nav">
+
+                    
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/">
+                                Home
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/people.html">
+                                People
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/publications.html">
+                                Publications
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/teaching.html">
+                                Teaching
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/isca26-workshop.html">
+                                SKYLINE ISCA'26 Workshop
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+
+            
+
+            
+
+            <section class="course-hero">
+  <div class="course-hero-inner">
+    <p class="course-eyebrow">Fall 2026 Graduate Seminar</p>
+    <h2>CS 395T: Hardware-Software Co-design for Cloud and Datacenters</h2>
+    <!-- <p class="course-subtitle">15 weeks (August 24 - December 7). No classes: November 23-28. Total instruction: 14 weeks.</p> -->
+  </div>
+</section>
+
+<section class="course-schedule">
+  <h2 class="course-section-title">Schedule and Readings</h2> <br>
+  <!-- <p class="course-section-note">If a day lists 3 papers, the last one is optional.</p> -->
+
+  <div class="table-responsive course-table-wrap">
+    <table class="table table-sm schedule-table course-table">
+      <thead>
+        <tr>
+          <th style="width: 22%">Week</th>
+          <th style="width: 12%">Day</th>
+          <th>Readings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Week 1: Datacenter Workloads</td>
+          <td>Tuesday</td>
+          <td>
+            <ul>
+              <li><a href="https://ieeexplore.ieee.org/document/7284063">Profiling a Warehouse-Scale Computer</a></li>
+              <li><a href="https://dl.acm.org/doi/10.1145/3579371.3589082">Profiling Hyperscale Big Data Processing</a></li>
+              <li class="optional-item"><a href="https://dl.acm.org/doi/10.1145/3600006.3613156">A Cloud-Scale Characterization of Remote Procedure Calls</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>
+            <ul>
+              <li><a href="http://dl.acm.org/doi/10.1145/3373376.3378450">Accelerometer: Understanding Acceleration Opportunities for Data Center Overheads at Hyperscale</a></li>
+              <li><a href="https://dl.acm.org/doi/10.1145/3695053.3731411">DCPerf: An Open-Source, Battle-Tested Performance Benchmark Suite for Datacenter Workloads</a></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Week 2: Microservices + Software</td>
+          <td>Tuesday</td>
+          <td>
+            <ul>
+              <li><a href="https://dl.acm.org/doi/10.1145/3297858.3304013">An Open-Source Benchmark Suite for Microservices and Their Hardware-Software Implications for Cloud &amp; Edge Systems</a></li>
+              <li><a href="https://www.usenix.org/conference/osdi18/presentation/sriraman">µTune: Auto-Tuned Threading for OLDI Microservices</a></li>
+              <li class="optional-item"><a href="https://dl.acm.org/doi/10.1145/3593856.3595909">Towards Modern Development of Cloud Applications</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>
+            <ul>
+              <li><a href="https://www.usenix.org/conference/nsdi19/presentation/ousterhout">Shenango: Achieving High CPU Efficiency for Latency-sensitive Datacenter Workloads</a></li>
+              <li><a href="https://dl.acm.org/doi/10.1145/3302424.3303958">GrandSLAm: Guaranteeing SLAs for Jobs in Microservices Execution Frameworks</a></li>
+              <li class="optional-item"><a href="https://www.usenix.org/conference/nsdi19/presentation/kaffes">Shinjuku: Preemptive Scheduling for µsecond-scale Tail Latency</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Week 3: Microservices + Hardware</td>
+          <td>Tuesday</td>
+          <td>
+            <ul>
+              <li><a href="https://dl.acm.org/doi/10.1145/3579371.3589068">µManycore: A Cloud-Native CPU for Tail at Scale</a></li>
+              <li><a href="https://ieeexplore.ieee.org/document/8675221">Enhancing Server Efficiency in the Face of Killer Microseconds</a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>
+            <ul>
+              <li><a href="https://dl.acm.org/doi/10.1145/3695053.3731071">HardHarvest: Hardware-Supported Core Harvesting for Microservices</a></li>
+              <li><a href="https://ieeexplore.ieee.org/document/9923866">SIMR: Single Instruction Multiple Request Processing for Energy-Efficient Data Center Microservices</a></li>
+              <li class="optional-item"><a href="https://ieeexplore.ieee.org/document/9923893">ALTOCUMULUS: Scalable Scheduling for Nanosecond-Scale RPCs</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Week 4: Serverless Computing + Software Characterization and Virtualization</td>
+          <td>Tuesday</td>
+          <td>
+            <ul>
+              <li><a href="https://www.usenix.org/conference/atc20/presentation/shahrad">Serverless in the Wild: Characterizing and Optimizing the Serverless Workload at a Large Cloud Provider</a></li>
+              <li><a href="https://dl.acm.org/doi/10.1145/3600006.3613155">XFaaS: Hyperscale and Low Cost Serverless Functions at Meta</a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>
+            <ul>
+              <li><a href="https://www.usenix.org/conference/nsdi20/presentation/agache">Firecracker: Lightweight Virtualization for Serverless Applications</a></li>
+              <li><a href="https://dl.acm.org/doi/10.1145/3373376.3378512">Catalyzer: Sub-millisecond Startup for Serverless Computing with Initialization-less Booting</a></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Week 5: Serverless Computing + Software Optimizations</td>
+          <td>Tuesday</td>
+          <td>
+            <ul>
+              <li><a href="https://dl.acm.org/doi/10.1145/3579371.3589069">MXFaaS: Resource Sharing in Serverless Environments for Parallelism and Efficiency</a></li>
+              <li><a href="https://ieeexplore.ieee.org/document/10071120">SpecFaaS: Accelerating Serverless Applications with Speculative Function Execution</a></li>
+              <li class="optional-item"><a href="https://www.usenix.org/conference/osdi25/presentation/chai-xiaohu">Reflections and Optimizations for Cold Start Latency in Production Serverless Systems</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>
+            <ul>
+              <li><a href="https://dl.acm.org/doi/10.1145/3472883.3486974">Faa$T: A Transparent Auto-Scaling Cache for Serverless Applications</a></li>
+              <li><a href="https://ieeexplore.ieee.org/document/10946775">Concord: Rethinking Distributed Coherence for Software Caches in Serverless Environments</a></li>
+              <li class="optional-item"><a href="https://www.usenix.org/conference/osdi20/presentation/zhang-haoran">Fault-tolerant and transactional stateful serverless workflows</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Week 6: Serverless Computing + Hardware</td>
+          <td>Tuesday</td>
+          <td>
+            <ul>
+              <li><a href="https://dl.acm.org/doi/10.1145/3352460.3358296">Architectural Implications of Function-as-a-Service Computing</a></li>
+              <li><a href="https://ieeexplore.ieee.org/document/10764517">Mosaic: Harnessing the Micro-Architectural Resources of Servers in Serverless Environments</a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>
+            <ul>
+              <li><a href="https://ieeexplore.ieee.org/document/9408361">BabelFish: Fusing Address Translations for Containers</a></li>
+              <li><a href="https://www.usenix.org/conference/osdi24/presentation/lazarev">Sabre: Hardware-Accelerated Snapshot Compression for Serverless MicroVMs</a></li>
+              <li class="optional-item"><a href="https://dl.acm.org/doi/10.1145/3503222.3507732">Serverless Computing on Heterogeneous Computers</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Week 7: Datacenter Tax Accelerators</td>
+          <td>Tuesday</td>
+          <td>
+            <ul>
+              <li><a href="https://dl.acm.org/doi/10.1145/3466752.3480051">A Hardware Accelerator for Protocol Buffers</a></li>
+              <li><a href="https://dl.acm.org/doi/abs/10.1145/3445814.3446696">Dagger: Efficient and Fast RPCs in Cloud Microservices with Near-Memory Reconfigurable NICs</a></li>
+              <li class="optional-item"><a href="https://dl.acm.org/doi/10.1145/3579371.3589074">CDPU: Co-designing Compression and Decompression Processing Units for Hyperscale Systems</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Thursday</td>
+          <td>
+            <ul>
+              <li><a href="https://ieeexplore.ieee.org/document/10609705">Intel Accelerators Ecosystem: An SoC-Oriented Perspective : Industry Product</a></li>
+              <li><a href="https://jovans2.github.io/files/accelflow_hpca_2026.pdf">AccelFlow: Orchestrating an On-Package Ensemble of Fine Grained Accelerators for Microservice Workloads</a></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr class="schedule-highlight">
+          <td>Week 8</td>
+          <td></td>
+          <td><strong>Midterm Project Presentations</strong></td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Week 9: Large Code Footprints of Datacenter Workloads</td>
+          <td>Tuesday</td>
+          <td>
+            <ul>
+              <li><a href="https://dl.acm.org/doi/10.1145/3307650.3322234">AsmDB: Understanding and Mitigating Front-End Stalls in Warehouse-Scale Computers</a></li>
+              <li><a href="https://dl.acm.org/doi/10.1145/3575693.3575727">Propeller: A Profile Guided, Relinking Optimizer for Warehouse-Scale Applications</a></li>
+              <li class="optional-item"><a href="https://dl.acm.org/doi/10.5555/3314872.3314876">BOLT: A Practical Binary Optimizer for Data Centers and Beyond</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>
+            <ul>
+              <li><a href="https://ieeexplore.ieee.org/document/9923864">Whisper: Profile-Guided Branch Misprediction Elimination for Data Center Applications</a></li>
+              <li><a href="https://ieeexplore.ieee.org/document/9251862">I-SPY: Context-Driven Conditional Instruction Prefetching with Coalescing</a></li>
+              <li class="optional-item"><a href="https://dl.acm.org/doi/10.1145/3620665.3640394">PDIP: Priority Directed Instruction Prefetching</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Week 10: AI Workloads in Datacenters</td>
+          <td>Tuesday</td>
+          <td>
+            <ul>
+              <li><a href="https://dl.acm.org/doi/10.1145/3079856.3080246">In-Datacenter Performance Analysis of a Tensor Processing Unit</a></li>
+              <li><a href="https://ieeexplore.ieee.org/document/9065589">The Architectural Implications of Facebook's DNN-Based Personalized Recommendation</a></li>
+              <li class="optional-item"><a href="https://dl.acm.org/doi/10.1145/3579371.3589348">MTIA: First Generation Silicon Targeting Meta's Recommendation Systems</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>
+            <ul>
+              <li><a href="https://www.usenix.org/conference/osdi22/presentation/yu">Orca: A Distributed Serving System for Transformer-Based Generative Models</a></li>
+              <li><a href="https://ieeexplore.ieee.org/document/10609649">Splitwise: Efficient Generative LLM Inference Using Phase Splitting</a></li>
+              <li class="optional-item"><a href="https://dl.acm.org/doi/10.1109/ISCA59077.2024.00078">Pre-Gated MoE: An Algorithm-System Co-Design for Fast and Scalable Mixture-of-Expert Inference</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Week 11: ML for Cloud and Datacenter Systems</td>
+          <td>Tuesday</td>
+          <td>
+            <ul>
+              <li><a href="https://dl.acm.org/doi/10.1145/3445814.3446693">Sinan: ML-based and QoS-aware Resource Management for Cloud Microservices</a></li>
+              <li><a href="https://www.usenix.org/conference/nsdi23/presentation/karthikeyan">SelfTune: Tuning Cluster Managers</a></li>
+              <li><a href="https://ieeexplore.ieee.org/document/9065442">Twig: Multi-Agent Task Management for Colocated Latency-Critical Cloud Services</a></li>
+              <li><a href="https://www.usenix.org/conference/osdi20/presentation/qiu">FIRM: An Intelligent Fine-grained Resource Management Framework for SLO-Oriented Microservices</a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>
+            <ul>
+              <li><a href="https://proceedings.mlr.press/v80/hashemi18a/hashemi18a.pdf">Learning Memory Access Patterns</a></li>
+              <li><a href="https://arxiv.org/abs/2503.15669">ECO: An LLM-Driven Efficient Code Optimizer for Warehouse Scale Computers</a></li>
+              <li class="optional-item"><a href="https://dl.acm.org/doi/10.1145/3725843.3756093">Learning to Walk: Architecting Learned Virtual Memory Translation</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Week 12: Datacenter Architecture with Power Management Part 1</td>
+          <td>Tuesday</td>
+          <td>
+            <ul>
+              <li><a href="https://dl.acm.org/doi/abs/10.1109/ISCA52012.2021.00033">Flex: High-Availability Datacenters with Zero Reserved Power</a></li>
+              <li><a href="https://dl.acm.org/doi/10.1145/3007787.3001187">Dynamo: Facebook's Data Center-Wide Power Management System</a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>
+            <ul>
+              <li><a href="https://dl.acm.org/doi/abs/10.1109/ISCA59077.2024.00040">SmartOClock: Workload- and Risk-Aware Overclocking in the Cloud</a></li>
+              <li><a href="https://dl.acm.org/doi/abs/10.1145/3296957.3173190">SmoothOperator: Reducing Power Fragmentation and Improving Power Utilization in Large-scale Datacenters</a></li>
+              <li class="optional-item"><a href="https://www.usenix.org/conference/osdi20/presentation/li-shaohong">Thunderbolt: Throughput-Optimized, Quality-of-Service-Aware Power Capping at Scale</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Week 13: Datacenter Architecture with Power Management Part 2</td>
+          <td>Tuesday</td>
+          <td>
+            <ul>
+              <li><a href="https://ieeexplore.ieee.org/document/6853237">Towards Energy Proportionality for Large-Scale Latency-Critical Workloads</a></li>
+              <li><a href="https://ieeexplore.ieee.org/document/10609608">EcoFaaS: Rethinking the Design of Serverless Environments for Energy Efficiency</a></li>
+              <li class="optional-item"><a href="https://ieeexplore.ieee.org/document/9773201">ReTail: Opting for Learning Simplicity to Enable QoS-Aware Power Management in the Cloud</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>
+            <ul>
+              <li><a href="https://dl.acm.org/doi/10.1145/3676641.3716025">TAPAS: Thermal- and Power-Aware Scheduling for LLM Inference in Cloud Platforms</a></li>
+              <li><a href="https://ieeexplore.ieee.org/document/10946802">DynamoLLM: Designing LLM Inference Clusters for Performance and Energy Efficiency</a></li>
+              <li class="optional-item"><a href="https://arxiv.org/abs/2509.26534">Rearchitecting Datacenter Lifecycle for AI: A TCO-Driven Framework</a> <span class="optional">(optional)</span></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr class="schedule-highlight">
+          <td>Week 14</td>
+          <td></td>
+          <td><strong>Thanksgiving, Fall Break</strong></td>
+        </tr>
+
+        <tr class="schedule-highlight">
+          <td>Week 15</td>
+          <td></td>
+          <td><strong>Final Project Presentations</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+            <div class="footer">
+                <p>
+                    CASCADE Lab @ UTCS
+                </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+    </body>
+</html>
