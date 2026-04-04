@@ -415,6 +415,116 @@ a {
     justify-content: center;
 }
 
+.course-schedule-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.course-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.course-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.course-info-card {
+    background: #ffffff;
+    border: 1px solid rgba(203, 96, 21, 0.16);
+    border-radius: 14px;
+    padding: 1.25rem 1.35rem;
+    box-shadow: 0 10px 24px rgba(203, 96, 21, 0.08);
+}
+
+.course-info-card h3,
+.course-info-card h4 {
+    color: $ut-orange;
+}
+
+.course-info-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 1rem 0;
+}
+
+.course-info-list li {
+    margin: 0.4rem 0;
+    color: #3c3328;
+}
+
+.course-info-list span {
+    font-weight: 600;
+    color: #6b5a48;
+    margin-right: 0.35rem;
+}
+
+.course-text-block {
+    background: #fffaf5;
+    border: 1px solid rgba(203, 96, 21, 0.12);
+    border-radius: 14px;
+    padding: 1.5rem 1.6rem;
+}
+
+.course-text-block h3 {
+    color: $ut-orange;
+}
+
+.course-button {
+    display: inline-block;
+    background: $ut-orange;
+    color: #ffffff;
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.course-button:hover,
+.course-button:focus {
+    color: #ffffff;
+    background: #b35212;
+    text-decoration: none;
+}
+
+.course-button-light {
+    background: #f3cb9b;
+    color: $ut-orange;
+}
+
+.course-button-light:hover,
+.course-button-light:focus {
+    background: #e8b47a;
+    color: $ut-orange;
+}
+
+.course-grading-table td {
+    border-top: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.course-grading-table .grading-pct {
+    text-align: right;
+    color: #6b5a48;
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    .course-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .course-table {
     width: 100%;
     max-width: 1100px;
