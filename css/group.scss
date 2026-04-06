@@ -269,6 +269,14 @@ a {
 // }
 
 
+.people {
+    width: 100%;
+}
+
+.people-role-group {
+    width: 100%;
+}
+
 /* Desktop default */
 .people-grid {
     display: grid;
@@ -317,19 +325,6 @@ a {
 
 /* Mobile: guaranteed single column, centered, no horizontal overlap */
 @media (max-width: 576px) {
-    .people.row {
-        margin-left: 0;
-        margin-right: 0;
-        justify-content: center;
-    }
-
-    .people .col-md-100000000000000,
-    .people [class^="col-"],
-    .people [class*=" col-"] {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
     .role {
         width: 100%;
     }

@@ -6,9 +6,9 @@ picture-role-groups:
 - {roles: [faculty, phd], width: 100000000000000}
 ---
 
-<section class="people row justify-content-between">
+<section class="people">
     {% for role-group in page.picture-role-groups %}
-        <div class="col-md-{{ role-group.width }}">
+        <div class="people-role-group">
             {% for role in role-group.roles %}
                 {% include role-people.html role=role image=true %}
             {% endfor %}
