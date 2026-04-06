@@ -9,14 +9,57 @@ josh:
     role: phd
     webpage: https://joshk411.github.io/
     image: ../img/people/josh-profile.png
-    bio: "<b>Start</b>: Fall 2025 <br> Undergraduate from CMU <br> <b>Research Interest</b>:<br> Heterogeneous Architectures for Datacenters"
+    bio: "<b>Start</b>: Fall 2025 <br> BSc from CMU <br> <b>Research Interest</b>:<br> Heterogeneous Architectures for Datacenters"
 
 alan:
     display_name: "Alan Andrade"
     role: phd
     webpage: https://alan-s-andrade.github.io/
     image: ../img/people/alan-profile.png
-    bio: "<b>Start</b>: Fall 2025 <br> Masters from UIUC <br> <b>Research Interest</b>:<br> Cloud Benchmarks and Memory Systems"
+    bio: "<b>Start</b>: Fall 2025 <br> MSc from UIUC <br> <b>Research Interest</b>:<br> Cloud Benchmarks and Memory Systems"
+
+# jonathan:
+#     display_name: "Jonathan Chu"
+#     role: phd
+#     webpage: https://www.linkedin.com/in/xiaoyang-c-a36863204/
+#     image: ../img/people/jonathan-profile.png
+#     image_scale: 1.0
+#     bio: "<b>Start</b>: Fall 2026 <br> MSc from UIUC <br> <b>Research Interest</b>:<br> Architecture for AI"
+
+# peizhe:
+#     display_name: "Peizhe Liu"
+#     role: phd
+#     webpage: TODO
+#     image: ../img/people/peizhe-profile.png
+#     bio: "<b>Start</b>: Fall 2026 <br> MSc from UIUC <br> <b>Research Interest</b>:<br> OS for Accelerator-Rich Servers"
+
+# jirong:
+#     display_name: "Jirong Yang"
+#     role: phd
+#     webpage: TODO
+#     image: ../img/people/jirong-profile.png
+#     bio: "<b>Start</b>: Fall 2026 <br> BSc from Univ. of Michigan <br> <b>Research Interest</b>:<br> Architecture for AI"
+
+# qiushi:
+#     display_name: "Qiushi Lin"
+#     role: phd
+#     webpage: TODO
+#     image: ../img/people/qiushi-profile.png
+#     bio: "<b>Start</b>: Fall 2026 <br> BSc from Tsinghua Univ. <br> <b>Research Interest</b>:<br> TODO"
+
+# vuk:
+#     display_name: "Vuk Luzanin"
+#     role: phd
+#     webpage: TODO
+#     image: ../img/people/vuk-profile.png
+#     bio: "<b>Start</b>: Fall 2026 <br> BSc from Univ. of Belgrade <br> <b>Research Interest</b>:<br> TODO"
+
+# yigit:
+#     display_name: "Yiğit Can"
+#     role: phd
+#     webpage: TODO
+#     image: ../img/people/yigit-profile.png
+#     bio: "<b>Start</b>: Fall 2026 <br> BSc from Bilkent Univ. <br> <b>Research Interest</b>:<br> TODO"
 
 petar:
     display_name: "Petar Acimovic <br><small><small>(visiting from Univ. of Cincinnati)</small></small>"

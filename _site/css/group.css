@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Space out content a bit */
 body {
   padding-top: 20px;
@@ -106,6 +107,23 @@ section {
 .profile {
   margin-top: 0.75rem;
   object-fit: cover;
+}
+
+.profile-mask {
+  margin-top: 0.75rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(var(--profile-scale, 1));
+  transform-origin: center center;
 }
 
 .noprofile circle {
@@ -508,6 +526,282 @@ a {
 
 .course-table a {
   color: #073e85;
+}
+
+/* ISCA'26 Workshop page */
+.workshop-hero {
+  position: relative;
+  overflow: hidden;
+  margin: 1.5rem 0 2.5rem;
+  border-radius: 18px;
+  border: 1px solid rgba(27, 61, 122, 0.12);
+  background: linear-gradient(135deg, #f6f9ff 0%, #eef5ff 35%, #fff4e9 100%);
+  box-shadow: 0 20px 45px rgba(27, 61, 122, 0.08);
+}
+
+.workshop-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 20% 20%, rgba(27, 61, 122, 0.08) 0 2px, transparent 3px), radial-gradient(circle at 80% 30%, rgba(27, 61, 122, 0.06) 0 2px, transparent 3px), linear-gradient(90deg, rgba(27, 61, 122, 0.08) 1px, transparent 1px), linear-gradient(180deg, rgba(27, 61, 122, 0.08) 1px, transparent 1px);
+  background-size: 120px 120px, 160px 160px, 32px 32px, 32px 32px;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.workshop-hero-inner {
+  position: relative;
+  padding: 2.5rem 2.25rem 2.25rem;
+}
+
+.workshop-eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #325ea8;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.workshop-title {
+  font-size: clamp(2rem, 3.3vw, 2.8rem);
+  color: #1f2f4a;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.workshop-subtitle {
+  font-size: 1.05rem;
+  color: #3b4a63;
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+
+.workshop-info {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.workshop-info-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(27, 61, 122, 0.12);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  box-shadow: 0 8px 18px rgba(27, 61, 122, 0.08);
+}
+
+.info-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #7a5a3a;
+  font-weight: 600;
+}
+
+.info-value {
+  font-size: 1rem;
+  color: #1f2f4a;
+  font-weight: 600;
+}
+
+.workshop-section {
+  margin-bottom: 2.5rem;
+}
+
+.workshop-section-title {
+  font-size: 1.5rem;
+  color: #1f2f4a;
+  margin-bottom: 0.75rem;
+  font-weight: 650;
+}
+
+.workshop-section-body {
+  background: #ffffff;
+  border: 1px solid rgba(27, 61, 122, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem 1.6rem;
+  box-shadow: 0 12px 24px rgba(27, 61, 122, 0.06);
+}
+
+.workshop-table-wrap {
+  overflow-x: auto;
+}
+
+.workshop-schedule {
+  margin: 0;
+}
+
+.workshop-schedule thead th {
+  background: #f1f6ff;
+  color: #1f2f4a;
+  border-bottom: 1px solid rgba(27, 61, 122, 0.12);
+  font-weight: 650;
+}
+
+.workshop-schedule tbody td {
+  vertical-align: top;
+  border-top: 1px solid rgba(27, 61, 122, 0.08);
+}
+
+.talk-title {
+  font-weight: 600;
+  color: #1f2f4a;
+  margin-bottom: 0.35rem;
+}
+
+.abstract-toggle {
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+.abstract-toggle summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #325ea8;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.abstract-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.abstract-toggle summary::after {
+  content: "▾";
+  color: #325ea8;
+}
+
+.abstract-toggle[open] summary::after {
+  content: "▴";
+}
+
+.abstract-toggle p {
+  margin: 0.5rem 0 0;
+  color: #3b4a63;
+  font-size: 0.95rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid rgba(50, 94, 168, 0.2);
+}
+
+.organizer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.workshop-subsection-title {
+  font-size: 1.1rem;
+  font-weight: 650;
+  color: #325ea8;
+  margin: 0.25rem 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.organizer-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px dashed rgba(27, 61, 122, 0.15);
+}
+
+.organizer-row:last-child {
+  border-bottom: none;
+}
+
+.organizer-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #eef5ff;
+  border: 1px solid rgba(27, 61, 122, 0.18);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --org-scale: 1;
+  --org-x: 0px;
+  --org-y: 0px;
+}
+
+.organizer-photo svg,
+.organizer-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.organizer-photo img {
+  object-fit: cover;
+  object-position: calc(50% + var(--org-x)) calc(50% + var(--org-y));
+  transform: scale(var(--org-scale));
+  transform-origin: center center;
+}
+
+.organizer-photo circle {
+  fill: #dbe7ff;
+}
+
+.organizer-photo text {
+  font-size: 0.75rem;
+  fill: #325ea8;
+  font-weight: 600;
+}
+
+.organizer-name {
+  font-size: 1.1rem;
+  font-weight: 650;
+  color: #1f2f4a;
+}
+
+.organizer-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.organizer-link:hover,
+.organizer-link:focus {
+  color: #325ea8;
+  text-decoration: underline;
+}
+
+.organizer-affiliation {
+  color: #6a5a46;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.organizer-bio {
+  margin: 0;
+  color: #3b4a63;
+}
+
+@media (max-width: 576px) {
+  .workshop-hero-inner {
+    padding: 2rem 1.5rem;
+  }
+  .workshop-info {
+    grid-template-columns: 1fr;
+  }
+  .organizer-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .organizer-photo {
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=group.css.map */

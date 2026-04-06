@@ -15,10 +15,12 @@ text-decoration hack is for Safari. We don't SVGs to be underlined.
     {% capture image %}
     <div class="person-card">
         <div class="person">
-            <img class="rounded-circle profile"
-                 src="{{ site.base }}{{ person.image }}" 
-                 style="width: 160px; height: 160px;"
-            />
+            <div class="profile-mask"
+                 style="width: 160px; height: 160px; --profile-scale: {{ person.image_scale | default: 1 }};">
+                <img class="profile-img"
+                     src="{{ site.base }}{{ person.image }}"
+                />
+            </div>
             
             <span class="person-title">
                 {{ person.display_name }}
