@@ -282,6 +282,7 @@ a {
     width: 20em;      /* desktop fixed card width */
     height: 15.5em;
     text-align: center;
+    justify-self: start;
 }
 
 .person-card {
@@ -344,6 +345,10 @@ a {
         width: 100% !important;
         max-width: 100%;
         margin: 0 auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        justify-self: center;
     }
 
     .person {
@@ -351,22 +356,12 @@ a {
         align-items: center;
     }
 
-    .person-with-image.row {
-        margin-left: 0;
-        margin-right: 0;
-        justify-content: center;
-    }
-
-    .person-with-image > .person-item {
-        width: auto !important;
-        max-width: 100%;
-    }
-
     .person-card {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: auto;
+        max-width: 100%;
     }
 
     .section-header {
