@@ -578,9 +578,9 @@ a {
 }
 
 .workshop-info {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .workshop-info-card {
@@ -592,6 +592,7 @@ a {
   flex-direction: column;
   gap: 0.35rem;
   box-shadow: 0 8px 18px rgba(27, 61, 122, 0.08);
+  min-width: 0;
 }
 
 .info-label {
@@ -606,6 +607,43 @@ a {
   font-size: 1rem;
   color: #1f2f4a;
   font-weight: 600;
+}
+
+.contact-card .info-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.info-compact {
+  flex: 0 1 auto;
+  white-space: nowrap;
+  min-width: 300px;
+}
+
+.contact-card {
+  flex: 1 1 320px;
+}
+
+.contact-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  color: #1f2f4a;
+  text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #325ea8;
+  text-decoration: underline;
+}
+
+.contact-sep {
+  color: #7b8aa6;
 }
 
 .workshop-section {
@@ -793,7 +831,7 @@ a {
     padding: 2rem 1.5rem;
   }
   .workshop-info {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
   .organizer-row {
     grid-template-columns: 1fr;
