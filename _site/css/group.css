@@ -278,14 +278,43 @@ a {
 
 /* Mobile: guaranteed single column, centered, no horizontal overlap */
 @media (max-width: 576px) {
+  .people.row {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+  }
+  .people .col-md-100000000000000,
+  .people [class^=col-],
+  .people [class*=" col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .role {
+    width: 100%;
+  }
   .people-grid {
     grid-template-columns: 1fr !important;
     column-gap: 0 !important;
     justify-items: center;
+    width: 100%;
   }
   .person-item {
-    width: min(20em, 100%) !important; /* cannot exceed viewport/track */
+    width: 100% !important;
     max-width: 100%;
+    margin: 0 auto;
+  }
+  .person {
+    width: 100%;
+    align-items: center;
+  }
+  .person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .person-hover {
+    width: min(220px, 100vw - 2rem);
   }
 }
 .person-title {
@@ -832,6 +861,14 @@ a {
   }
   .workshop-info {
     flex-direction: column;
+    align-items: stretch;
+  }
+  .workshop-info-card,
+  .info-compact,
+  .contact-card {
+    width: 100%;
+    min-width: 0;
+    flex: 1 1 auto;
   }
   .organizer-row {
     grid-template-columns: 1fr;
@@ -839,6 +876,18 @@ a {
   }
   .organizer-photo {
     margin: 0 auto;
+  }
+  .contact-card .info-value {
+    font-size: 0.88rem;
+  }
+  .contact-line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+  .contact-sep {
+    display: none;
   }
 }
 
