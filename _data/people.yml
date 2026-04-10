@@ -18,41 +18,47 @@ alan:
     image: ../img/people/alan-profile.png
     bio: "<b>Start</b>: Fall 2025 <br> MSc from UIUC <br> <b>Research Interest</b>:<br> Cloud Benchmarks and Memory Systems"
 
-# jonathan:
-#     display_name: "Jonathan Chu"
-#     role: phd
-#     webpage: https://www.linkedin.com/in/xiaoyang-c-a36863204/
-#     image: ../img/people/jonathan-profile.png
-#     image_scale: 1.0
-#     bio: "<b>Start</b>: Fall 2026 <br> MSc from UIUC <br> <b>Research Interest</b>:<br> Architecture for AI"
+jonathan:
+    display_name: "Jonathan Chu"
+    role: phd
+    webpage: https://www.linkedin.com/in/xiaoyang-c-a36863204/
+    image: ../img/people/jonathan-profile.png
+    # image_position: "50% 15%"
+    # image_scale: 1.0
+    bio: "<b>Start</b>: Fall 2026 <br> MSc from UIUC <br> <b>Research Interest</b>:<br> Architecture for AI"
 
-# peizhe:
-#     display_name: "Peizhe Liu"
-#     role: phd
-#     webpage: TODO
-#     image: ../img/people/peizhe-profile.png
-#     bio: "<b>Start</b>: Fall 2026 <br> MSc from UIUC <br> <b>Research Interest</b>:<br> OS for Accelerator-Rich Servers"
+peizhe:
+    display_name: "Peizhe Liu"
+    role: phd
+    webpage: http://pliu.io/
+    image: ../img/people/peizhe-profile.png
+    image_scale: 1.2
+    bio: "<b>Start</b>: Fall 2026 <br> MSc from UIUC <br> <b>Research Interest</b>:<br> OS for Accelerator-Rich Servers"
 
-# jirong:
-#     display_name: "Jirong Yang"
-#     role: phd
-#     webpage: TODO
-#     image: ../img/people/jirong-profile.png
-#     bio: "<b>Start</b>: Fall 2026 <br> BSc from Univ. of Michigan <br> <b>Research Interest</b>:<br> Architecture for AI"
+jirong:
+    display_name: "Jirong Yang"
+    role: phd
+    webpage: https://polarisyjr.github.io/website/
+    image: ../img/people/jirong-profile.png
+    image_position: "50% 10%"
+    bio: "<b>Start</b>: Fall 2026 <br> BSc from Univ. of Michigan <br> <b>Research Interest</b>:<br> Architecture for AI"
 
-# qiushi:
-#     display_name: "Qiushi Lin"
-#     role: phd
-#     webpage: TODO
-#     image: ../img/people/qiushi-profile.png
-#     bio: "<b>Start</b>: Fall 2026 <br> BSc from Tsinghua Univ. <br> <b>Research Interest</b>:<br> TODO"
+qiushi:
+    display_name: "Qiushi Lin"
+    role: phd
+    webpage: https://lqs22yeah.github.io/
+    image: ../img/people/qiushi-profile.png
+    image_scale: 2.3
+    image_position: "65% 50%"
+    bio: "<b>Start</b>: Fall 2026 <br> BSc from Tsinghua Univ. <br> <b>Research Interest</b>:<br> Self-Evolving Datacenters"
 
-# vuk:
-#     display_name: "Vuk Luzanin"
-#     role: phd
-#     webpage: TODO
-#     image: ../img/people/vuk-profile.png
-#     bio: "<b>Start</b>: Fall 2026 <br> BSc from Univ. of Belgrade <br> <b>Research Interest</b>:<br> TODO"
+vuk:
+    display_name: "Vuk Luzanin"
+    role: phd
+    webpage: https://vuk-luzanin.github.io/
+    image: ../img/people/vuk-profile.png
+    image_scale: 1.3
+    bio: "<b>Start</b>: Fall 2026 <br> BSc from Univ. of Belgrade <br> <b>Research Interest</b>:<br> Architecture &amp Systems for AI"
 
 # yigit:
 #     display_name: "Yiğit Can"
