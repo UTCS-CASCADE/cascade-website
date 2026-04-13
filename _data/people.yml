@@ -60,12 +60,12 @@ vuk:
     image_scale: 1.3
     bio: "<b>Start</b>: Fall 2026 <br> BSc from Univ. of Belgrade <br> <b>Research Interest</b>:<br> Architecture &amp Systems for AI"
 
-# yigit:
-#     display_name: "Yiğit Can"
-#     role: phd
-#     webpage: TODO
-#     image: ../img/people/yigit-profile.png
-#     bio: "<b>Start</b>: Fall 2026 <br> BSc from Bilkent Univ. <br> <b>Research Interest</b>:<br> TODO"
+yigit:
+    display_name: "Yiğit Can"
+    role: phd
+    webpage: https://yigitkemalcan.github.io/
+    image: ../img/people/yigit-profile.png
+    bio: "<b>Start</b>: Fall 2026 <br> BSc from Bilkent Univ. <br> <b>Research Interest</b>:<br> Architecture &amp Systems for AI"
 
 petar:
     display_name: "Petar Acimovic <br><small><small>(visiting from Univ. of Cincinnati)</small></small>"
