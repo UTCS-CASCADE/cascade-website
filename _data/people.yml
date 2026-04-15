@@ -61,7 +61,7 @@ vuk:
     bio: "<b>Start</b>: Fall 2026 <br> BSc from Univ. of Belgrade <br> <b>Research Interest</b>:<br> Architecture &amp Systems for AI"
 
 yigit:
-    display_name: "Yiğit Can"
+    display_name: "Yigit Can"
     role: phd
     webpage: https://yigitkemalcan.github.io/
     image: ../img/people/yigit-profile.png
