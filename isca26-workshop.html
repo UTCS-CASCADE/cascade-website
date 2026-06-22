@@ -101,11 +101,16 @@ notitle: true
                             <div class="talk-detail-grid">
                                 <div class="talk-detail-section">
                                     <div class="talk-detail-label">Abstract</div>
-                                    <p>TBD</p>
+                                    <p>
+                                        To democratize access to cloud computing systems, cloud providers have introduced new, cloud-native, computing paradigms. These emerging paradigms, including microservices and serverless computing, offer significantly simpler programming models alongside cost-efficient billing models. However, cloud-native services differ fundamentally from traditional monolithic applications. They exhibit short execution times, frequent context switching, bursty request patterns, and strict tail latency requirements. Hence, when such workloads run on conventional hardware and software systems, they end up having substantial performance, energy, and resource inefficiencies.
+                                        <br>In this talk, I will present my research efforts to tackle these challenges by designing hardware platforms that deliver orders of magnitude improvements in the efficiency of cloud-native workloads. I will give an overview of research vision and focus on two examples. First, I will introduce μManycore, a processor architecture tailored to minimize the tail latency of cloud services. Then, I will integrate many domain-specific accelerators with the processor and introduce AccelFlow, an efficient mechanism for orchestrating these accelerators. Finally, I will show how many of the architectural principles developed for cloud-native workloads are becoming increasingly relevant for emerging agentic AI systems, providing a foundation for efficient execution of large-scale, multi-agent workloads.
+                                    </p>
                                 </div>
                                 <div class="talk-detail-section">
                                     <div class="talk-detail-label">Speaker Bio</div>
-                                    <p>Jovan Stojkovic is an incoming assistant professor in the Computer Science Department at the University of Texas at Austin. Currently, he is a visiting researcher at Meta. Jovan holds a Ph.D. from the University of Illinois at Urbana-Champaign. Jovan's research interests are in computer architecture and systems for cloud and datacenter computing. He is the author of multiple papers published at top-tier computer architecture conferences such as ISCA, HPCA, MICRO, and ASPLOS, and holds six patents for his work with Microsoft and IBM on serverless computing, overclocking in the cloud, and AI datacenter design. His research has been recognized with accolades, including: David J. Kuck Outstanding PhD Thesis Award, HPCA Best Paper Award, IEEE Micro Top Pick Honorable Mention, W. J. Poppelbaum Memorial Award, Kenichi Miura Award, and an invitation to speak at the Heidelberg Laureate Forum.</p>
+                                    <p>
+                                        Jovan Stojkovic is an incoming assistant professor in the Computer Science Department at the University of Texas at Austin. Currently, he is a visiting researcher at Meta. Jovan holds a Ph.D. from the University of Illinois at Urbana-Champaign. Jovan's research interests are in computer architecture and systems for cloud and datacenter computing. His work has been published at top-tier computer architecture conferences such as ISCA, HPCA, MICRO, and ASPLOS, and he holds six patents for his work with Microsoft and IBM on serverless computing, overclocking in the cloud, and AI datacenter design. His research has been recognized with accolades, including: David J. Kuck Outstanding PhD Thesis Award, HPCA Best Paper Award, IEEE Micro Top Pick Honorable Mentions, W. J. Poppelbaum Memorial Award, Kenichi Miura Award, and an invitation to speak at the Heidelberg Laureate Forum.
+                                    </p>
                                 </div>
                             </div>
                         </td>
@@ -252,11 +257,15 @@ notitle: true
                             <div class="talk-detail-grid">
                                 <div class="talk-detail-section">
                                     <div class="talk-detail-label">Abstract</div>
-                                    <p>TBD</p>
+                                    <p>
+                                        The software stack of cloud-native software is complex and different from that of monolithic cloud applications. However, we can innovate by adapting known techniques from computer architecture to the distributed systems software of these environments. An analysis of the bottlenecks in cloud-native software suggests using concepts such as speculation and data coherence support to speed-up micro services and serverless functions. This talk will examine the software overheads of cloud-native workloads and present some ideas to mitigate them.
+                                    </p>
                                 </div>
                                 <div class="talk-detail-section">
                                     <div class="talk-detail-label">Speaker Bio</div>
-                                    <p>Josep Torrellas is the Thomas M. Siebel Chair in Computer Science at the University of Illinois at Urbana-Champaign (UIUC). He is the Director of the ACE Center for Evolvable Computing (an SRC/DARPA JUMP 2.0 Center), past Co-Leader of an Intel Strategic Research Alliance (ISRA) on Computer Security, and past Director of the Illinois-Intel Parallelism Center (I2PC). His research interests are multiprocessor computer architectures and parallel computing. Some of his contributions include thread-level speculation (TLS) architectures, the Bulk Multiprocessor concept, deterministic record and replay mechanisms, process variation mitigation techniques, and hardware defenses against speculative execution attacks. In addition, he has contributed to several experimental multiprocessor designs such as IBM's PERCS Multiprocessor, Intel's Runnemede Extreme-Scale Multiprocessor, Illinois Cedar, and Stanford DASH. Among other awards, Torrellas has graduated 52 PhDs. He received a PhD from Stanford University.</p>
+                                    <p>
+                                        Josep Torrellas is the Thomas M. Siebel Chair in Computer Science at the University of Illinois at Urbana-Champaign (UIUC). He is the Director of the ACE Center for Evolvable Computing (an SRC/DARPA JUMP 2.0 Center), past Co-Leader of an Intel Strategic Research Alliance (ISRA) on Computer Security, and past Director of the Illinois-Intel Parallelism Center (I2PC). His research interests are multiprocessor computer architectures and parallel computing. Some of his contributions include thread-level speculation (TLS) architectures, the Bulk Multiprocessor concept, deterministic record and replay mechanisms, process variation mitigation techniques, and hardware defenses against speculative execution attacks. In addition, he has contributed to several experimental multiprocessor designs such as IBM’s PERCS Multiprocessor, Intel’s Runnemede Extreme-Scale Multiprocessor, Illinois Cedar, and Stanford DASH. Torrellas has received several research awards including the IEEE CS Harry H. Goode Memorial Award. He is a Fellow of IEEE, ACM, and AAAS. He received a PhD from Stanford University.
+                                    </p>
                                 </div>
                             </div>
                         </td>
@@ -269,6 +278,19 @@ notitle: true
                                 <div class="schedule-event-description">
                                     <div><span class="schedule-event-label">Moderator:</span> Jovan Stojkovic</div>
                                     <div><span class="schedule-event-label">Panelists:</span> Chaojie Zhang, Benjamin Lee, Amir Yazdanbakhsh, Josep Torrellas</div>
+                                </div>
+                                <button class="talk-details-button" type="button" aria-expanded="false" aria-controls="panel-details-topic" data-details-target="panel-details-topic">View Details</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="talk-detail-row" id="panel-details-topic" hidden>
+                        <td colspan="3">
+                            <div class="talk-detail-grid">
+                                <div class="talk-detail-section">
+                                    <div class="talk-detail-label">Panel Discussion Topic</div>
+                                    <p>
+                                        The rise of agentic AI is transforming the software landscape of modern datacenters. This panel brings together experts from academia and industry to discuss how the cloud-native stack—from datacenter infrastructure and hardware platforms to operating systems, runtimes, and orchestration frameworks—must evolve to support these emerging workloads. We will also explore how agentic AI can become a powerful tool for designing, optimizing, and managing future cloud infrastructure itself.
+                                    </p>
                                 </div>
                             </div>
                         </td>
@@ -309,16 +331,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a class="organizer-link" href="https://jovans2.github.io/">Jovan Stojkovic</a>
                 </div>
                 <div class="organizer-affiliation">University of Texas at Austin and Meta</div>
-                <p class="organizer-bio">Jovan Stojkovic is an incoming assistant professor in the 
-                    Computer Science Department at the University of Texas at Austin. Currently, he is a 
-                    visiting researcher at Meta. Jovan holds a Ph.D. from the University of Illinois at 
-                    Urbana-Champaign. Jovan's research interests are in computer architecture and systems 
-                    for cloud and datacenter computing. He is the author of multiple papers published at 
-                    top-tier computer architecture conferences such as ISCA, HPCA, MICRO, and ASPLOS, and holds 
-                    six patents for his work with Microsoft and IBM on serverless computing, overclocking in the cloud, 
-                    and AI datacenter design. His research has been recognized with accolades, including: 
-                    David J. Kuck Outstanding PhD Thesis Award, HPCA Best Paper Award, IEEE Micro Top Pick Honorable Mention, 
-                    W. J. Poppelbaum Memorial Award, Kenichi Miura Award, and an invitation to speak at the Heidelberg Laureate Forum. 
+                <p class="organizer-bio">
+                    Jovan Stojkovic is an incoming assistant professor in the Computer Science Department at the University of Texas at Austin. Currently, he is a visiting researcher at Meta. Jovan holds a Ph.D. from the University of Illinois at Urbana-Champaign. Jovan's research interests are in computer architecture and systems for cloud and datacenter computing. His work has been published at top-tier computer architecture conferences such as ISCA, HPCA, MICRO, and ASPLOS, and he holds six patents for his work with Microsoft and IBM on serverless computing, overclocking in the cloud, and AI datacenter design. His research has been recognized with accolades, including: David J. Kuck Outstanding PhD Thesis Award, HPCA Best Paper Award, IEEE Micro Top Pick Honorable Mentions, W. J. Poppelbaum Memorial Award, Kenichi Miura Award, and an invitation to speak at the Heidelberg Laureate Forum.
                 </p>
             </div>
         </div>
@@ -331,17 +345,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a class="organizer-link" href="https://siebelschool.illinois.edu/about/people/faculty/torrella">Josep Torrellas</a>
                 </div>
                 <div class="organizer-affiliation">University of Illinois at Urbana-Champaign</div>
-                <p class="organizer-bio">Josep Torrellas is the Thomas M. Siebel Chair in Computer Science 
-                    at the University of Illinois at Urbana-Champaign (UIUC). He is the Director of the ACE Center 
-                    for Evolvable Computing (an SRC/DARPA JUMP 2.0 Center), past Co-Leader of an Intel Strategic 
-                    Research Alliance (ISRA) on Computer Security, and past Director of the Illinois-Intel Parallelism 
-                    Center (I2PC). His research interests are multiprocessor computer architectures and parallel computing. 
-                    Some of his contributions include thread-level speculation (TLS) architectures, the Bulk Multiprocessor 
-                    concept, deterministic record and replay mechanisms, process variation mitigation techniques, 
-                    and hardware defenses against speculative execution attacks. In addition, he has contributed to 
-                    several experimental multiprocessor designs such as IBM's PERCS Multiprocessor, Intel's Runnemede 
-                    Extreme-Scale Multiprocessor, Illinois Cedar, and Stanford DASH. Among other awards, Torrellas has 
-                    graduated 52 PhDs. He received a PhD from Stanford University.
+                <p class="organizer-bio">
+                    Josep Torrellas is the Thomas M. Siebel Chair in Computer Science at the University of Illinois at Urbana-Champaign (UIUC). He is the Director of the ACE Center for Evolvable Computing (an SRC/DARPA JUMP 2.0 Center), past Co-Leader of an Intel Strategic Research Alliance (ISRA) on Computer Security, and past Director of the Illinois-Intel Parallelism Center (I2PC). His research interests are multiprocessor computer architectures and parallel computing. Some of his contributions include thread-level speculation (TLS) architectures, the Bulk Multiprocessor concept, deterministic record and replay mechanisms, process variation mitigation techniques, and hardware defenses against speculative execution attacks. In addition, he has contributed to several experimental multiprocessor designs such as IBM's PERCS Multiprocessor, Intel's Runnemede Extreme-Scale Multiprocessor, Illinois Cedar, and Stanford DASH. Torrellas has received several research awards including the IEEE CS Harry H. Goode Memorial Award. He is a Fellow of IEEE, ACM, and AAAS. He received a PhD from Stanford University.
                 </p>
             </div>
         </div>
