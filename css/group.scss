@@ -943,6 +943,10 @@ a {
     width: 100%;
 }
 
+.schedule-event-content-stacked {
+    display: block;
+}
+
 .schedule-event-title {
     font-size: 1rem;
     font-weight: 650;
@@ -957,6 +961,10 @@ a {
     color: #3b4a63;
     font-size: 0.95rem;
     margin-top: 0;
+}
+
+.schedule-event-content-stacked .schedule-event-description {
+    margin-top: 0.35rem;
 }
 
 .schedule-event-description div + div {
