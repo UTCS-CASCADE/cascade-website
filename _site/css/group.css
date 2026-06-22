@@ -814,17 +814,13 @@ a {
   margin-bottom: 0.35rem;
 }
 
-.talk-details-toggle {
+.talk-details-button {
   border: none;
   padding: 0;
   background: transparent;
-}
-
-.talk-details-toggle summary {
   cursor: pointer;
   font-weight: 600;
   color: #325ea8;
-  list-style: none;
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
@@ -835,21 +831,33 @@ a {
   text-align: left;
 }
 
-.talk-details-toggle summary::-webkit-details-marker {
-  display: none;
-}
-
-.talk-details-toggle summary::after {
+.talk-details-button::after {
   content: "▾";
   color: #325ea8;
 }
 
-.talk-details-toggle[open] summary::after {
+.talk-details-button[aria-expanded=true]::after {
   content: "▴";
 }
 
+.workshop-schedule .talk-detail-row td {
+  padding-top: 0;
+  border-top: none;
+  white-space: normal !important;
+  width: auto;
+}
+
+.talk-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+  width: 100%;
+  padding: 0.85rem 0 1rem;
+}
+
 .talk-detail-section {
-  margin-top: 0.6rem;
+  min-width: 0;
+  max-width: 100%;
   padding-left: 0.9rem;
   border-left: 2px solid rgba(50, 94, 168, 0.2);
 }
@@ -867,6 +875,9 @@ a {
   margin: 0.5rem 0 0;
   color: #3b4a63;
   font-size: 0.95rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
 }
 
 .schedule-event-row td {

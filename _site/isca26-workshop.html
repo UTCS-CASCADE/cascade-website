@@ -10,7 +10,7 @@
               crossorigin="anonymous">
         <link rel="stylesheet"
               href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/css/group.css?v=1782076980">
+        <link rel="stylesheet" href="/css/group.css?v=1782148980">
         <link rel="icon" href="/ut-logo-cropped.png">
     </head>
     <body>
@@ -200,8 +200,12 @@
                         </td>
                         <td>
                             <div class="talk-title">Chasing the Tail at Scale</div>
-                            <details class="talk-details-toggle">
-                                <summary>View Details</summary>
+                            <button class="talk-details-button" type="button" aria-expanded="false" aria-controls="talk-details-jovan" data-details-target="talk-details-jovan">View Details</button>
+                        </td>
+                    </tr>
+                    <tr class="talk-detail-row" id="talk-details-jovan" hidden>
+                        <td colspan="3">
+                            <div class="talk-detail-grid">
                                 <div class="talk-detail-section">
                                     <div class="talk-detail-label">Abstract</div>
                                     <p>TBD</p>
@@ -210,7 +214,7 @@
                                     <div class="talk-detail-label">Speaker Bio</div>
                                     <p>Jovan Stojkovic is an incoming assistant professor in the Computer Science Department at the University of Texas at Austin. Currently, he is a visiting researcher at Meta. Jovan holds a Ph.D. from the University of Illinois at Urbana-Champaign. Jovan's research interests are in computer architecture and systems for cloud and datacenter computing. He is the author of multiple papers published at top-tier computer architecture conferences such as ISCA, HPCA, MICRO, and ASPLOS, and holds six patents for his work with Microsoft and IBM on serverless computing, overclocking in the cloud, and AI datacenter design. His research has been recognized with accolades, including: David J. Kuck Outstanding PhD Thesis Award, HPCA Best Paper Award, IEEE Micro Top Pick Honorable Mention, W. J. Poppelbaum Memorial Award, Kenichi Miura Award, and an invitation to speak at the Heidelberg Laureate Forum.</p>
                                 </div>
-                            </details>
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -228,17 +232,28 @@
                         </td>
                         <td>
                             <div class="talk-title">Rearchitecting Cloud-Native AI Infrastructure at Scale</div>
-                            <details class="talk-details-toggle">
-                                <summary>View Details</summary>
+                            <button class="talk-details-button" type="button" aria-expanded="false" aria-controls="talk-details-chaojie" data-details-target="talk-details-chaojie">View Details</button>
+                        </td>
+                    </tr>
+                    <tr class="talk-detail-row" id="talk-details-chaojie" hidden>
+                        <td colspan="3">
+                            <div class="talk-detail-grid">
                                 <div class="talk-detail-section">
                                     <div class="talk-detail-label">Abstract</div>
-                                    <p>TBD</p>
+                                    <p>
+                                        Cloud-native AI platforms are rapidly becoming the dominant consumers of datacenter resources, driving unprecedented demand for compute, power, and cooling. Yet today's cloud stacks remain largely siloed. As AI pushes physical infrastructure toward capacity limits, sustaining growth requires a fundamental shift: leveraging the extreme flexibility of modern cloud-native software stacks to optimize the rigid underlying hardware. In this talk, I will share lessons from building and deploying cross-stack optimization frameworks for hyperscale AI workloads. I will show how taking an end-to-end perspective allows us to exploit the elasticity of SaaS architectures and container orchestration to solve deep physical infrastructure constraints. I will present two examples of this philosophy in practice. 
+                                        <br><b>1. From Static Provisioning to Software-Driven Power Oversubscription.</b> Traditional approaches manage power constraints through conservative provisioning and fixed oversubscription policies, leaving substantial capacity stranded. Exposing fine-grained infrastructure telemetry and integrating it with cloud-native control planes enables a fundamentally different model. By combining cross-stack telemetry sharing, power-aware placement, and request-level inference routing, infrastructure constraints can be dynamically incorporated into runtime decisions. Leveraging the elasticity of Kubernetes orchestration and SaaS serving architectures, these techniques reduce throttling, improve multi-tenant efficiency, and unlock significant serving capacity.
+                                        <b>2. End-to-End Datacenter Lifecycle Co-Design.</b> The same principles extend beyond runtime management to long-term infrastructure planning. As software systems become increasingly adaptive, decisions involving power delivery, cooling infrastructure, hardware refreshes, and operational policies can be jointly optimized with operational policies to dramatically lower Total Cost of Ownership (TCO) while supporting continued AI growth.
+                                        <br>Together, these experiences suggest a broader evolution in cloud infrastructure: moving from optimizing isolated components toward a deeply coordinated end-to-end ecosystem. As AI workloads continues to scale, exploiting software-stack flexibility to orchestrate hardware resources will be essential for achieving sustainable performance, efficiency, and capacity growth.
+                                    </p>
                                 </div>
                                 <div class="talk-detail-section">
                                     <div class="talk-detail-label">Speaker Bio</div>
-                                    <p>TBD</p>
+                                    <p>
+                                        Chaojie Zhang is a Senior Research SDE in the Azure Research - Systems Group at Microsoft. Her work focuses on improving large-scale cloud efficiency across the stack through hardware-software co-design. Her research spans datacenter resource management, efficient systems for AI, and infrastructure planning. Chaojie's work has been published in leading computer architecture and systems venues, including ISCA, ASPLOS, and HPCA. Beyond research, she works closely with engineering teams to translate research innovations into production systems across Microsoft's AI and cloud platforms. She holds a Ph.D. from the University of Chicago.
+                                    </p>
                                 </div>
-                            </details>
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -255,18 +270,26 @@
                             </div>
                         </td>
                         <td>
-                            <div class="talk-title">TBD</div>
-                            <details class="talk-details-toggle">
-                                <summary>View Details</summary>
+                            <div class="talk-title">Toward Sustainable Data Centers for Artificial Intelligence</div>
+                            <button class="talk-details-button" type="button" aria-expanded="false" aria-controls="talk-details-ben" data-details-target="talk-details-ben">View Details</button>
+                        </td>
+                    </tr>
+                    <tr class="talk-detail-row" id="talk-details-ben" hidden>
+                        <td colspan="3">
+                            <div class="talk-detail-grid">
                                 <div class="talk-detail-section">
                                     <div class="talk-detail-label">Abstract</div>
-                                    <p>TBD</p>
+                                    <p>
+                                        As the impact of artificial intelligence (AI) continues to proliferate, computer architects must assess and mitigate its demands for energy and infrastructure. This talk presents a vision for sustainable datacenter computing and surveys recent advances from an NSF Expedition in Computing, a multi-university effort that spans hardware, systems, algorithms, and policy. The talk will draw on foundational academic research as well as data and experiences from industrial, hyperscale systems. We begin by quantifying AI's environmental impacts and fundamental trade-offs between capital and operating costs. We then traverse the datacenter stack, discussing topics such as the fair attribution of power and carbon with game theory; infrastructure design with carbon-efficient energy generation and storage; and emerging interfaces between the datacenter and electricity grid. The talk provides a broad perspective on sustainable computing and outlines the many directions for future work.
+                                    </p>
                                 </div>
                                 <div class="talk-detail-section">
                                     <div class="talk-detail-label">Speaker Bio</div>
-                                    <p>TBD</p>
+                                    <p>
+                                        Benjamin C. Lee is a Professor of Electrical and Systems Engineering and of Computer and Information Science at the University of Pennsylvania. He is also a visiting researcher in AI and Infrastructure at Google. Dr. Lee’s research focuses on computer architecture (microprocessors, memories, datacenters), energy efficiency, and environmental sustainability. He builds interdisciplinary links to machine learning and algorithmic economics to better design and manage computer systems. He received his post-doctorate from Stanford, Ph.D. from Harvard, and B.S. from the University of California at Berkeley. He has also held visiting positions at Meta AI, Microsoft Research, Intel Labs, and Lawrence Livermore National Lab. He is an IEEE Fellow and ACM Distinguished Scientist.
+                                    </p>
                                 </div>
-                            </details>
+                            </div>
                         </td>
                     </tr>
                     <tr class="schedule-event-row">
@@ -292,8 +315,12 @@
                         </td>
                         <td>
                             <div class="talk-title">TBD</div>
-                            <details class="talk-details-toggle">
-                                <summary>View Details</summary>
+                            <button class="talk-details-button" type="button" aria-expanded="false" aria-controls="talk-details-amir" data-details-target="talk-details-amir">View Details</button>
+                        </td>
+                    </tr>
+                    <tr class="talk-detail-row" id="talk-details-amir" hidden>
+                        <td colspan="3">
+                            <div class="talk-detail-grid">
                                 <div class="talk-detail-section">
                                     <div class="talk-detail-label">Abstract</div>
                                     <p>TBD</p>
@@ -302,7 +329,7 @@
                                     <div class="talk-detail-label">Speaker Bio</div>
                                     <p>TBD</p>
                                 </div>
-                            </details>
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -320,8 +347,12 @@
                         </td>
                         <td>
                             <div class="talk-title">TBD</div>
-                            <details class="talk-details-toggle">
-                                <summary>View Details</summary>
+                            <button class="talk-details-button" type="button" aria-expanded="false" aria-controls="talk-details-josep" data-details-target="talk-details-josep">View Details</button>
+                        </td>
+                    </tr>
+                    <tr class="talk-detail-row" id="talk-details-josep" hidden>
+                        <td colspan="3">
+                            <div class="talk-detail-grid">
                                 <div class="talk-detail-section">
                                     <div class="talk-detail-label">Abstract</div>
                                     <p>TBD</p>
@@ -330,7 +361,7 @@
                                     <div class="talk-detail-label">Speaker Bio</div>
                                     <p>Josep Torrellas is the Thomas M. Siebel Chair in Computer Science at the University of Illinois at Urbana-Champaign (UIUC). He is the Director of the ACE Center for Evolvable Computing (an SRC/DARPA JUMP 2.0 Center), past Co-Leader of an Intel Strategic Research Alliance (ISRA) on Computer Security, and past Director of the Illinois-Intel Parallelism Center (I2PC). His research interests are multiprocessor computer architectures and parallel computing. Some of his contributions include thread-level speculation (TLS) architectures, the Bulk Multiprocessor concept, deterministic record and replay mechanisms, process variation mitigation techniques, and hardware defenses against speculative execution attacks. In addition, he has contributed to several experimental multiprocessor designs such as IBM's PERCS Multiprocessor, Intel's Runnemede Extreme-Scale Multiprocessor, Illinois Cedar, and Stanford DASH. Among other awards, Torrellas has graduated 52 PhDs. He received a PhD from Stanford University.</p>
                                 </div>
-                            </details>
+                            </div>
                         </td>
                     </tr>
                     <tr class="schedule-event-row">
@@ -350,6 +381,24 @@
         </div>
     </div>
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".talk-details-button").forEach(function (button) {
+        button.addEventListener("click", function () {
+            var targetId = button.getAttribute("data-details-target");
+            var targetRow = document.getElementById(targetId);
+            if (!targetRow) {
+                return;
+            }
+
+            var isExpanded = button.getAttribute("aria-expanded") === "true";
+            button.setAttribute("aria-expanded", String(!isExpanded));
+            targetRow.hidden = isExpanded;
+        });
+    });
+});
+</script>
 
 <section class="workshop-section">
     <h2 class="workshop-section-title">Organizers</h2>
