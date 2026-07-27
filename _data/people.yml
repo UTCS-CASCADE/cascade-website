@@ -3,6 +3,8 @@ jovan:
     role: faculty
     webpage: https://jovans2.github.io/
     image: ../img/people/jovan-profile.png
+    image_scale: 1.05
+    image_position: "0% 15%"
 
 josh:
     display_name: "Joshua Kim <br><small><small>(co-advised by Chris Rossbach)</small></small>"
