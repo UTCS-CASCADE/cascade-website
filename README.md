@@ -11,6 +11,15 @@ cp -R _site/* ../.
 chmod -R g+rwX /v/filer5b/web-vhosts/cascade.cs.utexas.edu/html
 ```
 
+CASCADE Style/Page Edit Guideline
+---------------------------------
+Under construction....
+
+
+
+Template Summary
+-------------
+
 This is a [Jekyll][]-based Web site intended for research groups. Your group should be able to get up and running with minimal fuss.
 
 <p align="center">
