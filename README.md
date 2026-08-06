@@ -1,6 +1,16 @@
 Research Group Web Site Template
 ================================
 
+CASCADE Internal Note
+---------------------
+Make changes to files, check locally with `jekyll serve`. Once satisfied, run `make` then `git add .`. Commit and push. Then login to any public UTCS machine (e.g., linux.cs.utexas.edu) and run the following commands. (Of course, your git credentials need to be active on the machine)
+```sh
+cd /v/filer5b/web-vhosts/cascade.cs.utexas.edu/html/cascade-website
+git pull
+cp -R _site/* ../.
+chmod -R g+rwX /v/filer5b/web-vhosts/cascade.cs.utexas.edu/html
+```
+
 This is a [Jekyll][]-based Web site intended for research groups. Your group should be able to get up and running with minimal fuss.
 
 <p align="center">
