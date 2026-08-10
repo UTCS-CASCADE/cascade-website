@@ -17,15 +17,25 @@ notitle: true
     <table class="table table-sm schedule-table course-table">
       <thead>
         <tr>
-          <th style="width: 22%">Week</th>
-          <th style="width: 12%">Day</th>
-          <th>Readings</th>
+          <th style="width: 22%">Topic</th>
+          <th style="width: 14%">Day</th>
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Readings</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td rowspan="2">Week 1: Datacenter Workloads</td>
-          <td>Tuesday</td>
+          <td rowspan="1">Course Introduction</td>
+          <td class="date-cell date-alt-a">Tuesday (08/25)</td>
+          <td>
+            <ul>
+              Course overview & Syllabus
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Datacenter Workloads</td>
+          <td class="date-cell date-alt-b">Thursday (08/27)</td>
           <td>
             <ul>
               <li><a href="https://ieeexplore.ieee.org/document/7284063">Profiling a Warehouse-Scale Computer</a></li>
@@ -35,7 +45,7 @@ notitle: true
           </td>
         </tr>
         <tr>
-          <td>Thursday</td>
+          <td class="date-cell date-alt-a">Tuesday (09/01)</td>
           <td>
             <ul>
               <li><a href="http://dl.acm.org/doi/10.1145/3373376.3378450">Accelerometer: Understanding Acceleration Opportunities for Data Center Overheads at Hyperscale</a></li>
@@ -45,8 +55,8 @@ notitle: true
         </tr>
 
         <tr>
-          <td rowspan="2">Week 2: Microservices + Software</td>
-          <td>Tuesday</td>
+          <td rowspan="2">Microservices + Software</td>
+          <td class="date-cell date-alt-b">Thursday (09/03)</td>
           <td>
             <ul>
               <li><a href="https://dl.acm.org/doi/10.1145/3297858.3304013">An Open-Source Benchmark Suite for Microservices and Their Hardware-Software Implications for Cloud &amp; Edge Systems</a></li>
@@ -56,7 +66,7 @@ notitle: true
           </td>
         </tr>
         <tr>
-          <td>Thursday</td>
+          <td class="date-cell date-alt-a">Tuesday (09/08)</td>
           <td>
             <ul>
               <li><a href="https://www.usenix.org/conference/nsdi19/presentation/ousterhout">Shenango: Achieving High CPU Efficiency for Latency-sensitive Datacenter Workloads</a></li>
@@ -67,8 +77,8 @@ notitle: true
         </tr>
 
         <tr>
-          <td rowspan="2">Week 3: Microservices + Hardware</td>
-          <td>Tuesday</td>
+          <td rowspan="2">Microservices + Hardware</td>
+          <td class="date-cell date-alt-b">Thursday (09/10)</td>
           <td>
             <ul>
               <li><a href="https://dl.acm.org/doi/10.1145/3579371.3589068">µManycore: A Cloud-Native CPU for Tail at Scale</a></li>
@@ -77,7 +87,7 @@ notitle: true
           </td>
         </tr>
         <tr>
-          <td>Thursday</td>
+          <td class="date-cell date-alt-a">Tuesday (09/15)</td>
           <td>
             <ul>
               <li><a href="https://dl.acm.org/doi/10.1145/3695053.3731071">HardHarvest: Hardware-Supported Core Harvesting for Microservices</a></li>
@@ -87,9 +97,13 @@ notitle: true
           </td>
         </tr>
 
+        <tr class="schedule-highlight">
+          <td colspan="3" class="text-center"> 09/15: Deadline for Project Proposal (by 9:00am)</td>
+        </tr>
+
         <tr>
-          <td rowspan="2">Week 4: Serverless Computing + Software Characterization and Virtualization</td>
-          <td>Tuesday</td>
+          <td rowspan="2">Serverless Computing + Software Characterization <br>and Virtualization</td>
+          <td class="date-cell date-alt-b">Thursday (09/17)</td>
           <td>
             <ul>
               <li><a href="https://www.usenix.org/conference/atc20/presentation/shahrad">Serverless in the Wild: Characterizing and Optimizing the Serverless Workload at a Large Cloud Provider</a></li>
@@ -98,7 +112,7 @@ notitle: true
           </td>
         </tr>
         <tr>
-          <td>Thursday</td>
+          <td class="date-cell date-alt-a">Tuesday (09/22)</td>
           <td>
             <ul>
               <li><a href="https://www.usenix.org/conference/nsdi20/presentation/agache">Firecracker: Lightweight Virtualization for Serverless Applications</a></li>
@@ -108,8 +122,8 @@ notitle: true
         </tr>
 
         <tr>
-          <td rowspan="2">Week 5: Serverless Computing + Software Optimizations</td>
-          <td>Tuesday</td>
+          <td rowspan="2">Serverless Computing + Software Optimizations</td>
+          <td class="date-cell date-alt-b">Thursday (09/24)</td>
           <td>
             <ul>
               <li><a href="https://dl.acm.org/doi/10.1145/3579371.3589069">MXFaaS: Resource Sharing in Serverless Environments for Parallelism and Efficiency</a></li>
@@ -119,7 +133,7 @@ notitle: true
           </td>
         </tr>
         <tr>
-          <td>Thursday</td>
+          <td class="date-cell date-alt-a">Tuesday (09/29)</td>
           <td>
             <ul>
               <li><a href="https://dl.acm.org/doi/10.1145/3472883.3486974">Faa$T: A Transparent Auto-Scaling Cache for Serverless Applications</a></li>
@@ -130,8 +144,8 @@ notitle: true
         </tr>
 
         <tr>
-          <td rowspan="2">Week 6: Serverless Computing + Hardware</td>
-          <td>Tuesday</td>
+          <td rowspan="2">Serverless Computing + Hardware</td>
+          <td class="date-cell date-alt-b">Thursday (10/01)</td>
           <td>
             <ul>
               <li><a href="https://dl.acm.org/doi/10.1145/3352460.3358296">Architectural Implications of Function-as-a-Service Computing</a></li>
@@ -140,7 +154,7 @@ notitle: true
           </td>
         </tr>
         <tr>
-          <td>Thursday</td>
+          <td class="date-cell date-alt-a">Tuesday (10/06)</td>
           <td>
             <ul>
               <li><a href="https://ieeexplore.ieee.org/document/9408361">BabelFish: Fusing Address Translations for Containers</a></li>
@@ -151,8 +165,8 @@ notitle: true
         </tr>
 
         <tr>
-          <td rowspan="2">Week 7: Datacenter Tax Accelerators</td>
-          <td>Tuesday</td>
+          <td rowspan="2">Datacenter Tax Accelerators</td>
+          <td class="date-cell date-alt-b">Thursday (10/08)</td>
           <td>
             <ul>
               <li><a href="https://dl.acm.org/doi/10.1145/3466752.3480051">A Hardware Accelerator for Protocol Buffers</a></li>
@@ -162,7 +176,7 @@ notitle: true
           </td>
         </tr>
         <tr>
-          <td>Thursday</td>
+          <td class="date-cell date-alt-a">Tuesday (10/13)</td>
           <td>
             <ul>
               <li><a href="https://ieeexplore.ieee.org/document/10609705">Intel Accelerators Ecosystem: An SoC-Oriented Perspective : Industry Product</a></li>
@@ -171,15 +185,32 @@ notitle: true
           </td>
         </tr>
 
-        <tr class="schedule-highlight">
-          <td>Week 8</td>
-          <td></td>
-          <td><strong>Midterm Project Presentations</strong></td>
+        <tr>
+          <td rowspan="2">Midterm Project <br>Presentations</td>
+          <td class="date-cell date-alt-b">Thursday (10/15)</td>
+          <td>
+            <ul>
+              Presentation Session 1
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="date-cell date-alt-a">Tuesday (10/20)</td>
+          <td>
+            <ul>
+              Presentation Session 2
+            </ul>
+          </td>
         </tr>
 
+        <tr class="schedule-highlight">
+          <td colspan="3" class="text-center">10/22: Deadline for Midterm Report (by 9:00am)</td>
+        </tr>
+        
+
         <tr>
-          <td rowspan="2">Week 9: Large Code Footprints of Datacenter Workloads</td>
-          <td>Tuesday</td>
+          <td rowspan="2">Large Code Footprints of Datacenter Workloads</td>
+          <td class="date-cell date-alt-b">Thursday (10/22)</td>
           <td>
             <ul>
               <li><a href="https://dl.acm.org/doi/10.1145/3307650.3322234">AsmDB: Understanding and Mitigating Front-End Stalls in Warehouse-Scale Computers</a></li>
@@ -189,7 +220,7 @@ notitle: true
           </td>
         </tr>
         <tr>
-          <td>Thursday</td>
+          <td class="date-cell date-alt-a">Tuesday (10/27)</td>
           <td>
             <ul>
               <li><a href="https://ieeexplore.ieee.org/document/9923864">Whisper: Profile-Guided Branch Misprediction Elimination for Data Center Applications</a></li>
@@ -200,8 +231,8 @@ notitle: true
         </tr>
 
         <tr>
-          <td rowspan="2">Week 10: AI Workloads in Datacenters</td>
-          <td>Tuesday</td>
+          <td rowspan="2">AI Workloads in Datacenters</td>
+          <td class="date-cell date-alt-b">Thursday (10/29)</td>
           <td>
             <ul>
               <li><a href="https://dl.acm.org/doi/10.1145/3079856.3080246">In-Datacenter Performance Analysis of a Tensor Processing Unit</a></li>
@@ -211,7 +242,7 @@ notitle: true
           </td>
         </tr>
         <tr>
-          <td>Thursday</td>
+          <td class="date-cell date-alt-a">Tuesday (11/03)</td>
           <td>
             <ul>
               <li><a href="https://www.usenix.org/conference/osdi22/presentation/yu">Orca: A Distributed Serving System for Transformer-Based Generative Models</a></li>
@@ -222,8 +253,8 @@ notitle: true
         </tr>
 
         <tr>
-          <td rowspan="2">Week 11: ML for Cloud and Datacenter Systems</td>
-          <td>Tuesday</td>
+          <td rowspan="2">ML for Cloud and Datacenter Systems</td>
+          <td class="date-cell date-alt-b">Thursday (11/05)</td>
           <td>
             <ul>
               <li><a href="https://dl.acm.org/doi/10.1145/3445814.3446693">Sinan: ML-based and QoS-aware Resource Management for Cloud Microservices</a></li>
@@ -234,7 +265,7 @@ notitle: true
           </td>
         </tr>
         <tr>
-          <td>Thursday</td>
+          <td class="date-cell date-alt-a">Tuesday (11/10)</td>
           <td>
             <ul>
               <li><a href="https://proceedings.mlr.press/v80/hashemi18a/hashemi18a.pdf">Learning Memory Access Patterns</a></li>
@@ -245,8 +276,8 @@ notitle: true
         </tr>
 
         <tr>
-          <td rowspan="2">Week 12: Datacenter Architecture with Power Management Part 1</td>
-          <td>Tuesday</td>
+          <td rowspan="3">Datacenter Architecture with Power Management (Part 1)</td>
+          <td class="date-cell date-alt-b">Thursday (11/12)</td>
           <td>
             <ul>
               <li><a href="https://dl.acm.org/doi/abs/10.1109/ISCA52012.2021.00033">Flex: High-Availability Datacenters with Zero Reserved Power</a></li>
@@ -255,7 +286,7 @@ notitle: true
           </td>
         </tr>
         <tr>
-          <td>Thursday</td>
+          <td class="date-cell date-alt-a">Tuesday (11/17)</td>
           <td>
             <ul>
               <li><a href="https://dl.acm.org/doi/abs/10.1109/ISCA59077.2024.00040">SmartOClock: Workload- and Risk-Aware Overclocking in the Cloud</a></li>
@@ -266,8 +297,22 @@ notitle: true
         </tr>
 
         <tr>
-          <td rowspan="2">Week 13: Datacenter Architecture with Power Management Part 2</td>
-          <td>Tuesday</td>
+          <td class="date-cell date-alt-b">Thursday (11/19)</td>
+          <td>
+            <ul>
+              Reserved as course buffer 
+            </ul>
+          </td>
+        </tr>
+
+         <tr class="schedule-highlight">
+          <td colspan="3" class="text-center">Thanksgiving Fall Break</td>
+        </tr>
+
+        <tr>
+        <td rowspan="3">Datacenter Architecture with Power Management (Part 2)</td>
+        <tr>
+          <td class="date-cell date-alt-a">Tuesday (12/01)</td>
           <td>
             <ul>
               <li><a href="https://ieeexplore.ieee.org/document/6853237">Towards Energy Proportionality for Large-Scale Latency-Critical Workloads</a></li>
@@ -277,7 +322,7 @@ notitle: true
           </td>
         </tr>
         <tr>
-          <td>Thursday</td>
+          <td class="date-cell date-alt-b">Thursday (12/03)</td>
           <td>
             <ul>
               <li><a href="https://dl.acm.org/doi/10.1145/3676641.3716025">TAPAS: Thermal- and Power-Aware Scheduling for LLM Inference in Cloud Platforms</a></li>
@@ -288,15 +333,7 @@ notitle: true
         </tr>
 
         <tr class="schedule-highlight">
-          <td>Week 14</td>
-          <td></td>
-          <td><strong>Thanksgiving, Fall Break</strong></td>
-        </tr>
-
-        <tr class="schedule-highlight">
-          <td>Week 15</td>
-          <td></td>
-          <td><strong>Final Project Presentations</strong></td>
+          <td colspan="3" class="text-center">Final Project Presentations (Report due 12/15 by 9:00am)</td>
         </tr>
       </tbody>
     </table>

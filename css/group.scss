@@ -423,6 +423,20 @@ a {
     color: $gray;
 }
 
+.schedule-table .date-cell {
+    background-color: transparent;
+    font-weight: 400;
+}
+
+.schedule-table .date-cell.date-alt-a {
+    color: #000000;
+}
+
+.schedule-table .date-cell.date-alt-b {
+    color: $ut-orange;
+    font-weight: 600;
+}
+
 .schedule-highlight td {
     background-color: #fff7ee;
     color: $ut-orange;
@@ -607,6 +621,16 @@ a {
 .course-table td:nth-child(2) {
     color: inherit;
     font-weight: 400;
+}
+
+.course-table td.date-cell {
+    color: #000000;
+    font-weight: 400;
+}
+
+.course-table td.date-cell.date-alt-b {
+    color: $ut-orange;
+    font-weight: 600;
 }
 
 .course-table a {
