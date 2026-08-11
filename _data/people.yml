@@ -12,6 +12,8 @@ josh:
     webpage: https://joshk411.github.io/
     image: ../img/people/josh-profile.png
     bio: "<b>Start</b>: Fall 2025 <br> BSc from CMU <br> <b>Research Interest</b>:<br> Heterogeneous Architectures for Datacenters"
+    image_scale: 1.1
+    image_position: "30% 13%"
 
 alan:
     display_name: "Alan Andrade"
